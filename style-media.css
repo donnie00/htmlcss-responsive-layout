@@ -1,4 +1,7 @@
 @media screen and (min-width: 768px) {
+    .col-md-1_2 {
+        width: calc(100% / 2);
+    }
 
 }
 
@@ -24,5 +27,15 @@
 
     .col-lg-3_4 {
         width: calc((100% / 4) * 3);
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger-icon {
+        display: none;
     }
 }

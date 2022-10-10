@@ -11,18 +11,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 50px;
+    /* min-height: 50px; */
+}
+
+body {
+    font-family: system-ui;
 }
 
 img {
     display: block;
     width: 100%;
+    object-fit: cover;
 }
 
 button {
     background-color: transparent;
     border: none;
     border-radius: 25px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 30px;
+    min-height: 100px;
+
+    padding: 1rem;
+
+    background-color: white;
+}
+
+.font-big {
+    font-size: 2rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .bg-primary {
@@ -43,10 +74,19 @@ button {
     color: white;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .btn-white {
     background-color: white;
     color: black;
     padding: .3rem 1rem;
+}
+
+.btn-secondary {
+    background-color: var(--clr-secondary);
+    color: white;
 }
 
 .container {
@@ -62,11 +102,14 @@ button {
 
 .row > * {
     flex-grow: 1;
-    /* flex-basis: 100%; */
+    flex-basis: 100%;
 }
+
+/* nav and links style  */
 
 nav {
     padding: .5rem 0;
+    color: white;
 }
 
 nav .container {
@@ -76,9 +119,7 @@ nav .container {
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
 .nav-links > ul {
@@ -96,4 +137,102 @@ nav .container {
 
     display: flex;
     align-items: center;
+}
+
+.planning .card {
+    color: #333333;
+}
+
+.planning .card > button {
+    border-radius: 50%;
+    padding: 1rem;
+
+    color: var(--clr-dark);
+}
+
+.testimonials .card {
+    text-align: center;
+    line-height: 1.5rem;
+
+    font-size: larger;
+}
+
+.testimonials .card h3 {
+    text-transform: uppercase;
+
+    padding: 1.5rem 0;
+}
+
+.testimonials .card img {
+    padding: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.benefits .card {
+    color: var(--clr-secondary);
+    padding: 2rem;
+}
+
+.benefits .card p {
+    color: var(--clr-dark);
+}
+
+.benefits .card > * {
+    padding-bottom: 1rem;
+}
+
+.benefits .card button {
+    padding: .5rem 3rem;
+}
+
+.about-us-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-us-profile img {
+    border-radius: 50%;
+    width: 50%;
+    position: relative;
+}
+
+/* .about-us-profile img::after {
+    content: "ciao";
+    font-size: 4rem;
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: red;
+} */
+
+.about-us-profile button {
+    padding: .5rem;
+}
+
+.about-us-profile {
+    color: var(--clr-secondary);
+}
+
+.get-started h2 {
+    color: var(--clr-accent);
+}
+
+.get-started .btn-white {
+    padding: 1rem 3rem;
+    color: var(--clr-secondary);
+}
+
+footer {
+    background-color: var(--clr-dark);
+    color: white;
+}
+
+footer a {
+    color: var(--clr-secondary);
+}
+
+footer .container > * {
+    padding: 2rem;
 }
