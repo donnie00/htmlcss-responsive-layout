@@ -11,11 +11,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* min-height: 50px; */
 }
 
 body {
     font-family: system-ui;
+}
+
+section {
+    padding: 3rem 0;
 }
 
 img {
@@ -28,28 +31,35 @@ button {
     background-color: transparent;
     border: none;
     border-radius: 25px;
+
+    padding: 5% 10%;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 2rem 0;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .card {
-    border: 1px solid black;
     border-radius: 30px;
-    min-height: 100px;
 
-    padding: 1rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
 
     background-color: white;
 }
 
 .font-big {
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 .text-center {
@@ -80,12 +90,16 @@ h3 {
 
 .btn-white {
     background-color: white;
-    color: black;
-    padding: .3rem 1rem;
+    color: var(--clr-dark);
 }
 
 .btn-secondary {
     background-color: var(--clr-secondary);
+    color: white;
+}
+
+.btn-blue {
+    background-color: var(--clr-primary);
     color: white;
 }
 
@@ -110,6 +124,7 @@ h3 {
 nav {
     padding: .5rem 0;
     color: white;
+    margin-bottom: 2rem;
 }
 
 nav .container {
@@ -139,11 +154,43 @@ nav .container {
     align-items: center;
 }
 
+.header-cards .card {
+    color: var(--clr-primary);
+}
+
+.header-cards .card > * {
+    margin-bottom: 1rem;
+}
+
+.header-cards .card p {
+    color: var(--clr-dark)
+}
+
+.header-cards .card button {
+    width: 70%;
+    letter-spacing: 1px;
+}
+
+.header-cards .card img {
+    margin-bottom: -2rem;
+}
+
 .planning .card {
-    color: #333333;
+    color: var(--clr-dark);
+}
+
+.planning .card > * {
+    margin-bottom: 2rem;
+}
+
+.planning .card p {
+    font-style: italic;
 }
 
 .planning .card > button {
+
+    margin: 0;
+
     border-radius: 50%;
     padding: 1rem;
 
@@ -152,15 +199,12 @@ nav .container {
 
 .testimonials .card {
     text-align: center;
-    line-height: 1.5rem;
 
     font-size: larger;
 }
 
 .testimonials .card h3 {
     text-transform: uppercase;
-
-    padding: 1.5rem 0;
 }
 
 .testimonials .card img {
@@ -207,10 +251,6 @@ nav .container {
     background-color: red;
 } */
 
-.about-us-profile button {
-    padding: .5rem;
-}
-
 .about-us-profile {
     color: var(--clr-secondary);
 }
@@ -220,7 +260,6 @@ nav .container {
 }
 
 .get-started .btn-white {
-    padding: 1rem 3rem;
     color: var(--clr-secondary);
 }
 
