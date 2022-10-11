@@ -1,40 +1,77 @@
 @media screen and (min-width: 768px) {
-    .col-md-1_2 {
-        width: calc(100% / 2);
+
+    html {
+        font-size: 1rem;
     }
 
-}
-
-@media screen and (min-width: 920px) {
     .container {
-        max-width: 920px;
+        max-width: 768px;
     }
 
     .row > * {
         flex-basis: auto;
     }
 
+    .col-md-1_2 {
+        width: calc((100% / 2) - var(--flex-gap));
+    }
+
+    .col-md-1_3 {
+        width: calc((100% / 3) - var(--flex-gap));
+    }
+
+    .col-md-2_3 {
+        width: calc(((100% / 3) * 2) - var(--flex-gap));
+    }
+
+    .col-md-1_4 {
+        width: calc((100% / 4) - var(--flex-gap));
+    }
+
+    .col-md-2_4 {
+        width: calc(((100% / 4) * 2) - var(--flex-gap));
+    }
+
+    .col-md-3_4 {
+        width: calc(((100% / 4) * 3) - var(--flex-gap));
+    }
+
+    .testimonials .card .testimonial-text {
+        text-align: unset;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+    html {
+        font-size: .8rem;
+    }
+
+    .container {
+        max-width: 920px;
+    }
+
     .col-lg-1_3 {
-        width: calc(100% / 3);
+        width: calc((100% / 3) - var(--flex-gap));
     }
     .col-lg-2_3 {
-        width: calc((100% / 3) * 2);
+        width: calc(((100% / 3) * 2) - var(--flex-gap));
     }
 
     .col-lg-1_2 {
-        width: calc(100% / 2);
+        width: calc((100% / 2) - var(--flex-gap));
     }
 
     .col-lg-1_4 {
-        width: calc(100% / 4);
+        width: calc((100% / 4) - var(--flex-gap));
     }
 
     .col-lg-2_4 {
-        width: calc((100% / 4) * 2);
+        width: calc(((100% / 4) * 2) - var(--flex-gap));
     }
 
     .col-lg-3_4 {
-        width: calc((100% / 4) * 3);
+        width: calc(((100% / 4) * 3) - var(--flex-gap));
     }
 
     .nav-links {
@@ -45,5 +82,20 @@
 
     .burger-icon {
         display: none;
+    }
+
+    .demo-card {
+        display: flex;
+    }
+
+    .planning-text-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .planning-card {
+        margin-top: 10rem;
     }
 }
