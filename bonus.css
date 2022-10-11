@@ -1,0 +1,348 @@
+:root {
+    --clr-primary: #0384FD;
+    --clr-primary-light: #B4DDFF ;
+    --clr-secondary: #9892E4 ;
+    --clr-dark: #333333 ;
+    --clr-accent: #FDC15F ;
+    --flex-gap: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.3rem;
+}
+
+body {
+    font-family: system-ui;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    font-weight: bold;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+
+    padding: .5rem;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.section-title {
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: 200;
+
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-radius: 30px;
+
+    padding: 2rem;
+    height: 100%;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.font-big {
+    font-size: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-clr-secondary {
+    color: var(--clr-secondary);
+}
+
+.text-clr-primary {
+    color: var(--clr-primary);
+}
+
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.bg-light {
+    background-color: var(--clr-primary-light);
+}
+
+.bg-secondary {
+    background-color: var(--clr-secondary);
+    color: white;
+}
+
+.bg-dark {
+    background-color: var(--clr-dark);
+    color: white;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--clr-dark);
+}
+
+.btn-secondary {
+    background-color: var(--clr-secondary);
+    color: white;
+}
+
+.btn-blue {
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 0.5rem;
+
+    gap: var(--flex-gap);
+}
+
+.row > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+nav {
+    padding: .5rem 0;
+    color: white;
+    margin-bottom: 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav button {
+    font-weight: 200;
+}
+
+.nav-links {
+    display: none;
+    align-items: center;
+}
+
+.nav-links > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links > ul > li {
+    margin-right: 1rem;
+    padding: .5rem 0;
+    overflow: hidden;
+}
+
+.nav-links > ul > li > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.burger-icon {
+    font-size: 2rem;
+}
+
+.menu-toggle {
+    display: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle:hover .nav-links {
+    display: flex;
+}
+
+header {
+    margin-bottom: 3rem;
+    padding-top: calc(60px + 2rem);
+}
+
+.header-cards .card > * {
+    margin-bottom: 1rem;
+}
+
+.header-cards .card p {
+    color: var(--clr-dark)
+}
+
+.header-cards .card button {
+    width: 200px;
+    letter-spacing: 1px;
+}
+
+.header-cards .card img {
+    margin-bottom: -2rem;
+}
+
+.planning .card {
+    color: var(--clr-dark);
+}
+
+.planning .card > * {
+    margin-bottom: 2rem;
+}
+
+.planning .card p {
+    font-style: italic;
+}
+
+.planning .card > button {
+
+    margin: 0;
+
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 1rem;
+
+    color: var(--clr-dark);
+}
+
+.testimonials .card .testimonial-text {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.testimonials .card h3 {
+    text-transform: uppercase;
+}
+
+.testimonials .card img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.benefits .card p {
+    color: var(--clr-dark);
+}
+
+.benefits .card > * {
+    padding-bottom: 1rem;
+}
+
+.benefits .card button {
+    padding: .5rem 3rem;
+}
+
+.about-us-text > p {
+    line-height: 2rem;
+}
+
+.about-us-profile {
+    color: var(--clr-secondary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    position: relative;
+}
+
+.about-us-profile img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.about-us-profile button {
+    padding: .5rem;
+}
+
+.img-quotes i {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    font-size: 3rem;
+}
+
+.get-started h2 {
+    color: var(--clr-accent);
+}
+
+.get-started button {
+    color: var(--clr-secondary);
+
+    width: 90%;
+    max-width: 200px;
+
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: var(--clr-dark);
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--clr-secondary);
+}
