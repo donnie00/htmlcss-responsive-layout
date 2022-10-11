@@ -28,11 +28,13 @@ img {
 }
 
 button {
+    font-weight: bold;
+
     background-color: transparent;
     border: none;
     border-radius: 25px;
 
-    padding: 5% 10%;
+    padding: .5rem;
 }
 
 p {
@@ -42,11 +44,19 @@ p {
 
 h2 {
     font-size: 2.5rem;
-    padding: 2rem 0;
+    margin: 2rem 0;
 }
 
 h3 {
     font-size: 1.5rem;
+}
+
+.section-title {
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: 200;
+
+    margin-bottom: 1rem;
 }
 
 .card {
@@ -64,6 +74,14 @@ h3 {
 
 .text-center {
     text-align: center;
+}
+
+.text-clr-secondary {
+    color: var(--clr-secondary);
+}
+
+.text-clr-primary {
+    color: var(--clr-primary);
 }
 
 .bg-primary {
@@ -154,10 +172,6 @@ nav .container {
     align-items: center;
 }
 
-.header-cards .card {
-    color: var(--clr-primary);
-}
-
 .header-cards .card > * {
     margin-bottom: 1rem;
 }
@@ -167,7 +181,7 @@ nav .container {
 }
 
 .header-cards .card button {
-    width: 70%;
+    width: 200px;
     letter-spacing: 1px;
 }
 
@@ -191,6 +205,8 @@ nav .container {
 
     margin: 0;
 
+    width: 50px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     padding: 1rem;
 
@@ -214,7 +230,6 @@ nav .container {
 }
 
 .benefits .card {
-    color: var(--clr-secondary);
     padding: 2rem;
 }
 
@@ -230,16 +245,24 @@ nav .container {
     padding: .5rem 3rem;
 }
 
+
 .about-us-profile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    gap: 2rem;
 }
 
 .about-us-profile img {
     border-radius: 50%;
     width: 50%;
     position: relative;
+}
+
+.about-us-profile button {
+    padding: .5rem;
+    width: 50%;
 }
 
 /* .about-us-profile img::after {
@@ -259,13 +282,25 @@ nav .container {
     color: var(--clr-accent);
 }
 
-.get-started .btn-white {
+.get-started button {
     color: var(--clr-secondary);
+
+    width: 90%;
+    max-width: 200px;
+
+    padding: 1rem 3rem;
+    margin: 1rem auto;
 }
+
 
 footer {
     background-color: var(--clr-dark);
     color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+
 }
 
 footer a {

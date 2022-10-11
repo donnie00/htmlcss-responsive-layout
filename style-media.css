@@ -10,6 +10,10 @@
         max-width: 920px;
     }
 
+    .row > * {
+        flex-basis: auto;
+    }
+
     .col-lg-1_3 {
         width: calc(100% / 3);
     }
@@ -23,6 +27,10 @@
 
     .col-lg-1_4 {
         width: calc(100% / 4);
+    }
+
+    .col-lg-2_4 {
+        width: calc((100% / 4) * 2);
     }
 
     .col-lg-3_4 {
